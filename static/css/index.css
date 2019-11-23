@@ -21,7 +21,6 @@ body {
 
 .header {
   width: 100%;
-  height: 50px;
   position: fixed;
   background-color: #474e5d;
   top: 0px;
@@ -40,8 +39,8 @@ body {
   position: relative;
 	background-color: #474e5d;
 	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  width: 500px;
-  height: 600px;
+  width: 600px;
+  min-height:250px;
   margin-left: 30px;
   top: -62px;
 }
@@ -50,9 +49,9 @@ body {
   position: relative;
 	background-color: #474e5d;
 	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  width: 500px;
-  height: 600px;
-  margin-left: -525px;
+  width: 600px;
+  min-height:250px;
+  margin-left: -625px;
   top: -62px;
 }
 
@@ -63,7 +62,7 @@ body {
   margin: 3px auto 0 auto;
 }
 
-.line img{
+.icon{
   height: 42px;
   width: 42px;
   margin: 15px auto 0 auto;
@@ -77,6 +76,29 @@ body {
 
 .line:hover .infobox-left {
   display:block;
+}
+
+.line:hover .picture-source {
+  display:block;
+}
+
+.picture-source {
+  display: none;
+  position: fixed;
+  left: 0px;
+  bottom: 0px;
+  background-color: white;
+  font-size: 75%;
+}
+
+.screen-right {
+  float:left;
+  margin: 15px;
+}
+
+.screen-left {
+  float:right;
+  margin: 15px;
 }
 
 .segment {
