@@ -5,13 +5,17 @@ body {
   font-family: arial;
 }
 
+h3 {
+  color: white;
+}
+
 .dot {
   position: relative;
-  width: 17px;
-  height: 17px;
+  width: 20px;
+  height: 20px;
   border-radius: 50%;
   background-color: transparent;
-  border-width: 3px;
+  border-width: 6px;
   border-style: solid;
   border-color: #666;
   z-index: 1;
@@ -19,19 +23,27 @@ body {
   margin: 3px auto 0 auto;
 }
 
-.header {
-  width: 100%;
+.header-left {
+  width: 23%;
   position: fixed;
   background-color: #474e5d;
   top: 0px;
-  right: 0px;
+  left: 0px;
 }
 
-.header p {
+.header-left p {
   color: white;
   font-size: 250%;
   margin: 5px 0 0 5px;
   font-weight: bold;
+}
+
+.header-right {
+  width: 2%;
+  position: fixed;
+  background-color: #474e5d;
+  top: 0px;
+  right: 0px;
 }
 
 .infobox-right{
@@ -41,8 +53,8 @@ body {
 	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   width: 600px;
   min-height:250px;
-  margin-left: 30px;
-  top: -62px;
+  margin-left: 45px;
+  top: -80px;
 }
 .infobox-left{
   display:none;
@@ -51,22 +63,36 @@ body {
 	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   width: 600px;
   min-height:250px;
-  margin-left: -625px;
-  top: -62px;
+  margin-left: -634px;
+  top: -80px;
 }
 
 .line{
   background-color: #666;
-  height: 75px;
-  width: 3px;
+  height: 100px;
+  width: 8px;
+  margin: 3px auto 0 auto;
+}
+
+.line-last{
+  background-color: #666;
+  height: 150px;
+  width: 8px;
+  margin: 3px auto 0 auto;
+}
+
+.line-end{
+  background-color: #666;
+  height: 200px;
+  width: 8px;
   margin: 3px auto 0 auto;
 }
 
 .icon{
-  height: 42px;
-  width: 42px;
+  height: 70px;
+  width: 70px;
   margin: 15px auto 0 auto;
-  left: -20px;
+  left: -30px;
   position: relative;
 }
 
@@ -80,6 +106,32 @@ body {
 
 .line:hover .picture-source {
   display:block;
+}
+
+.line:hover{
+  background-color: #00e600;
+}
+
+.main-info {
+  color: white;
+  font-size: 250%;
+  margin: 5px 0 0 5px;
+  font-weight: bold;
+  margin: 3px 10px 3px 10px
+}
+
+.main-info:hover .main-info-text {
+  display: block;
+}
+
+.main-info-text {
+  text-align: left;
+  font-size: 50%;
+  font-weight: normal;
+  background-color: #474e5d;
+  display: none;
+  position: fixed;
+  right:0px;
 }
 
 .picture-source {
@@ -104,6 +156,14 @@ body {
 .segment {
   margin: 0 auto 0 auto;
   width: 120px;
+}
+
+.text-left {
+  margin-left:10px;
+}
+
+.text-right {
+  margin-right:10px;
 }
 
 .timetable {
